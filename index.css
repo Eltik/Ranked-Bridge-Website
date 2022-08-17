@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+body {
+    margin: 0;
+}
+
+#header {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40vh;
+    color: white;
+}
+
+#header_video {
+    position: fixed;
+    z-index: -1;
+    filter: brightness(0.5);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+#header h1 {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 510%;
+    line-height: 50px;
+    text-shadow: 5px 0px 3px #232323;
+    color: white;
+}
+
+#header h2 {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 190%;
+    height: 35px;
+    line-height: 34px;
+    text-shadow: 5px 0px 3px #232323;
+    color: rgb(230, 230, 230);
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+}
+
+#nav_button {
+    font-size: 25px;
+    background-color:rgba(92, 104, 118, 0.5);
+    border: 1px solid rgb(230, 242, 255);
+    border-radius: 8px;
+    transition: 0.2s all;
+    color: white;
+}
+
+#nav_button:hover {
+    background-color: rgb(48, 56, 66);
+}
+
+#navbar ul {
+    display: none;
+    background-color:rgba(48, 56, 66, 0.6);
+    border-radius: 8px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    left: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0;
+    text-align: left;
+}
+
+#navbar ul a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    font-family: "Maven Pro", sans-serif;
+    transition: 0.2s all;
+}
+
+#navbar ul a:hover {
+    background-color: rgb(48, 56, 66);
+}
+
+@media screen and (max-width: 1000px) {
+    #nav_button {
+        font-size: 30px;
+    }
+
+    #header {
+        margin-top: 25vh;
+    }
+
+    #header h1 {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 410%;
+        line-height: auto;
+        height: auto;
+    }
+    
+    #header h2 {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 130%;
+        height: 35px;
+        line-height: 30px;
+        margin-top: 15vh;
+        margin-right: 10vh;
+        margin-left: 10vh;
+        font-weight: 100px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Ranked Bridge</title>
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Ranked Bridge">
+        <meta property="og:title" content="Ranked Bridge">
+        <meta property="og:description" content="Competitive Bridge for the Elite.">
+        <meta property="og:image" content="./logo.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@discord">
+        <meta name="twitter:creator" content="@Eltik_">
+
+        <link rel="icon" type="image/x-icon" href="./logo.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Kanit&family=Ubuntu&family=Megrim&display=swap" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar">
+            <button type="button" id="nav_button" onclick="displayNav()"><span>⌵</span></button>
+            <ul id="nav_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://discord.gg/p3xrpYyW4K" target="_blank">Discord</a></li>
+            </ul>
+        </nav>
+        <div id="header_wrapper">
+            <video id="header_video" loop="" muted="" autoplay="" playsinline="" poster="./cinematic.mp4">
+                <source src="./cinematic.mp4" type="video/mp4">
+            </video>
+            <div id="header">
+                <h1>Ranked Bridge</h1>
+                <h2>Competitive Bridge <br /> for Elite Players</h2>
+            </div>
+        </div>
+    </body>
+    <script>
+        function displayNav() {
+            let nav = document.getElementById("nav_list");
+            if (nav.style.display === "none") {
+                nav.style.display = "block";
+            } else if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
+</html>
