@@ -86,6 +86,7 @@ body {
     text-align: center;
     font-family: "Maven Pro", sans-serif;
     transition: 0.2s all;
+    border-radius: 5px;
 }
 
 #navbar ul a:hover {

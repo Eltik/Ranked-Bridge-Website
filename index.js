@@ -1,5 +1,5 @@
 const express = require('express');
-let port = 3777;
+let port = 3061;
 
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'https://anify.club');
+    res.setHeader('Access-Control-Allow-Origin', 'https://rankedbridge.net');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     res.setHeader('Access-Control-Allow-Credentials', true);
@@ -43,8 +43,16 @@ app.get('/index.html', function(req, res){
     res.sendFile("index.html", { root: join(__dirname, './') });
 });
 
+app.get('/maps.html', function(req, res){
+    res.sendFile("maps.html", { root: join(__dirname, './') });
+});
+
 app.get('/index.css', function(req, res){
     res.sendFile("index.css", { root: join(__dirname, './') });
+});
+
+app.get('/maps.css', function(req, res){
+    res.sendFile("maps.css", { root: join(__dirname, './') });
 });
 
 app.get('/cinematic.mp4', function(req, res){

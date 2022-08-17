@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Ranked Bridge</title>
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Ranked Bridge">
+        <meta property="og:title" content="Ranked Bridge">
+        <meta property="og:description" content="Competitive Bridge for Elite Players.">
+        <meta property="og:image" content="https://rankedbridge.net/logo.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@discord">
+        <meta name="twitter:creator" content="@Eltik_">
+
+        <link rel="icon" type="image/x-icon" href="./logo.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Kanit&family=Ubuntu&family=Megrim&display=swap" rel="stylesheet">
+        <link href="maps.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar">
+            <button type="button" id="nav_button" onclick="displayNav()"><span>⌵</span></button>
+            <ul id="nav_list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./maps.html">Maps</a></li>
+                <li><a href="https://discord.gg/p3xrpYyW4K" target="_blank">Discord</a></li>
+            </ul>
+        </nav>
+        <div id="header">
+            <h1>Maps</h1>
+            <h2>All the custom maps on the Ranked Bridge server.</h2>
+        </div>
+        <div id="maps">
+            <div class="map">
+                <video class="map_video" loop="" muted="" autoplay="" playsinline="" poster="./interlude.mp4">
+                    <source src="./interlude.mp4" type="video/mp4">
+                </video>
+                <h3>Interlude</h3>
+                <p>This is the first map.</p>
+            </div>
+        </div>
+    </body>
+    <script>
+        function displayNav() {
+            let nav = document.getElementById("nav_list");
+            if (nav.style.display === "none") {
+                nav.style.display = "block";
+            } else if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
+</html>
